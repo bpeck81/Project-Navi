@@ -1,0 +1,14 @@
+﻿<Window x:Class="KinectFaceFollower.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="1080" Width="1920">
+    <Viewbox>
+        <Grid Width="1920" Height="1080">
+            <Image Name="camera" />
+            <Label x:Name="FoundNames" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <Canvas Name="canvas">
+                <Rectangle Name="rectangleHead" Style="{StaticResource BoxStyle}"/>
+            </Canvas>
+        </Grid>
+    </Viewbox>
+</Window>
